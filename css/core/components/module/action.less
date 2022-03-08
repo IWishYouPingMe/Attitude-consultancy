@@ -1,0 +1,89 @@
+// Background Colors
+// ----------------------------------------------------------------------------/
+.success {
+    background-color: @success;
+    color: @success-text;
+}
+
+.success-hover {
+    &.active,
+    &:hover,
+    &:active {
+        background-color: @success-hover;
+        color: @success-text;
+    }
+}
+
+.warning {
+    background-color: @warning;
+    color: @warning-text;
+}
+
+.warning-hover {
+    &.active,
+    &:hover,
+    &:active {
+        background-color: @warning-hover;
+        color: @warning-text;
+    }
+}
+
+.danger {
+    background-color: @danger;
+    color: @danger-text;
+}
+
+.danger-hover {
+    &.active,
+    &:hover,
+    &:active {
+        background-color: @danger-hover;
+        color: @danger-text;
+    }
+}
+
+
+// Text Colors
+// ----------------------------------------------------------------------------/
+.success-text {
+    color: @success;
+}
+
+.warning-text {
+    color: @warning;
+}
+
+.danger-text {
+    color: @danger;
+}
+
+
+// Borders
+// ----------------------------------------------------------------------------/
+.border-action() {
+    .border-success {
+        border-color: @success;
+    }
+    
+    .border-warning {
+        border-color: @warning;
+    }
+    
+    .border-danger {
+        border-color: @danger;
+    }
+}
+
+
+// Disabled
+// ----------------------------------------------------------------------------/
+.disabled,
+.disabled:hover,
+.disabled:active,
+.disabled:focus {
+    background-color: @disabled;
+    color: @disabled-text;
+    text-decoration: none;
+    outline: 0;
+    cursor: not-allowed;
+}
